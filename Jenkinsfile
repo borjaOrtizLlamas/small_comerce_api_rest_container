@@ -9,7 +9,7 @@ pipeline {
 
         stage('build') {
             steps {
-                sh 	"docker build . -t 005269061637.dkr.ecr.eu-west-1.amazonaws.com/small_comerce_api_rest:$TAG"
+                sh 	"docker build --no-cache . -t 005269061637.dkr.ecr.eu-west-1.amazonaws.com/small_comerce_api_rest:$TAG"
             }
         }
 
