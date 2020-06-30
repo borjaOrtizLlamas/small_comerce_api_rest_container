@@ -7,7 +7,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
   springboot: 
-    image: 005269061637.dkr.ecr.eu-west-1.amazonaws.com/small_comerce_api_rest:$change
+    image: 005269061637.dkr.ecr.eu-west-1.amazonaws.com/small_comerce_api_rest:change_tag
     ports:
       - "90:8080"
     depends_on:
