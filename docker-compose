@@ -12,9 +12,5 @@ services:
       - "90:8080"
     depends_on:
       - mongo.tfm.com
-  pruebas: 
-    image: test_api_rest:latest
-    depends_on:
-      - springboot
 volumes:
   logs: {}
